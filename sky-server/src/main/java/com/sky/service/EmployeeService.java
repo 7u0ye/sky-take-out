@@ -32,4 +32,18 @@ public interface EmployeeService {
      * 启用禁用员工
      */
     void startOrStop(Integer status,Long id);
+
+
+    /**
+     * 通过id获取信息
+     * @param id
+     * @return
+     */
+    Employee getById(Long id);
+
+    /**
+     * 编辑员工信息
+     * @param employeeDTO
+     */
+    void update(EmployeeDTO employeeDTO);
 }
